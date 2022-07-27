@@ -1,7 +1,7 @@
 #ifndef RCC_PRIVATE_H
 #define RCC_PRIVATE_H
 
-#define RCC_BASE_ADD   (volatile u32*)(0x40023800)
+#define RCC_BASE_ADD   (u32)(0x40023800)
 
 #define RCC_CR         *( (volatile u32*)( (RCC_BASE_ADD) + 0x00) )
 #define RCC_PLLCFGR    *( (volatile u32*)( (RCC_BASE_ADD) + 0x04) )
@@ -35,5 +35,7 @@
 #define RCC_LSEBYP     2
 #define RCC_LSEON      0  
 #define RCC_LSION      0  
+#define RCC_SW0        0  
+#define RCC_SW1        1  
 
 #endif
