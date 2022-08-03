@@ -10,6 +10,6 @@
    5-PLL
 */
 
-#define RCC_CLK_SOURCE HSI
+#define RCC_CLK_SOURCE HSE
 
 #endif

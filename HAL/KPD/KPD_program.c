@@ -35,7 +35,7 @@ void KPD_voidInit()
 u8 KPB_u8GetPressedKey(void)
 {
 
-	u8 Local_u8ColumnsIndex,Local_u8RowsIndex,Local_u8PinState,Local_u8PressedKey=KPD_NO_PRESSEDKEY;
+	u32 Local_u8ColumnsIndex,Local_u8RowsIndex,Local_u8PinState,Local_u8PressedKey=KPD_NO_PRESSEDKEY;
 	u8 Local_u8ColumnsArray[4]={KPD_COLUMN0_PIN,KPD_COLUMN1_PIN,KPD_COLUMN2_PIN,KPD_COLUMN3_PIN};
 	u8 Local_u8RowsArray[4]={KPD_ROW0_PIN,KPD_ROW1_PIN,KPD_ROW2_PIN,KPD_ROW3_PIN};
 	u8 Local_u8KeysArray[4][4]=KPD_KEYSARRAY_VALUES;
